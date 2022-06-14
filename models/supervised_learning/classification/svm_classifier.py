@@ -16,7 +16,7 @@ svc = SVC(C=0.9, kernel="rbf")
 svc.fit(X, labels)
 
 fig, ax = plt.subplots(1,1)
-draw_dicision_rigion(X, svc,step=0.05, ax=ax)
+draw_dicision_rigion(X, svc, step=0.05, ax=ax)
 draw_samples(X, labels, ax)
 plt.show()
 #%% LinearSVC
@@ -24,7 +24,7 @@ linearsvc = LinearSVC(C=0.9)
 linearsvc.fit(X, labels)
 
 fig, ax = plt.subplots(1,1)
-draw_dicision_rigion(X, linearsvc,step=0.05, ax=ax)
+draw_dicision_rigion(X, linearsvc, step=0.05, ax=ax)
 draw_samples(X, labels, ax)
 plt.show()
 #%% NuSVC
@@ -32,7 +32,7 @@ nusvc = NuSVC(nu=0.01, kernel="rbf")
 nusvc.fit(X, labels)
 
 fig, ax = plt.subplots(1,1)
-draw_dicision_rigion(X, nusvc,step=0.05, ax=ax)
+draw_dicision_rigion(X, nusvc, step=0.05, ax=ax)
 draw_samples(X, labels, ax)
 plt.show()
 
